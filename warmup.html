@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Warmup Exercise: the DOM</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="container">
+
+	<header>
+		<h1>DOM Warmup</h1>
+		<p class="lead">Click the buttons to interact with the page!</p>
+		<p class="lead instructions">Add code to the <code>warmup.js</code> file to modify this page</p>
+	</header>
+
+	<img id="face" src="img/happy.png">
+
+	<section id="text-mod">
+		<p>
+			<button id="purple-button" class="btn btn-primary">Purplize Text</button>
+		</p>
+		<p>
+			<button id="content-button" class="btn btn-default">Change Content</button>
+			<input id="contentBox" type="text" placeholder="Content to add...">
+		</p>
+		<section id="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</section>
+	</section>
+
+
+
+  <!-- load script file -->
+  <script src="js/warmup.js"></script>
+  <!-- load jQuery -->
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+</body>
+</html>
