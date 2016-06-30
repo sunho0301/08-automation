@@ -1,3 +1,3 @@
-# jQuery Demo
+# Automation Demo
 
-Repo for demonstrating jQuery, AJAX, and any other libraries.
+Repo for demonstrating AJAX, other libraries, and Gulp!

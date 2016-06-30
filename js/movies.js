@@ -1,20 +1,28 @@
 'use strict';
 
-/* code goes here */
-
+//when the form is submitted
 $('form').submit(function(event) {
-   
-   /* do whatever we want with the form's data */
 
+   //get what the user typed in
    var searchTerm = $('#movieTitle').val();
-
+   
+   //construct the url to query
    var url = 'http://www.omdbapi.com/?s='+searchTerm;
-   console.log(url);
+   console.log('Sending request to '+url);
 
+   //send the AJAX request
    $.get(url);
 
 
-   //don't submit as usual!
-   event.preventDefault();    //current standard
-   return false;              //older browsers
+   //don't submit form as usual
+   return false; //jQuery specific version of event.preventDefault()
+});
+
+
+//have enter submit form (for convenience)
+$('input').keypress(function(event) {
+   if (event.keyCode == 13) { //if enter key pressed
+      event.preventDefault(); //don't do normal work
+      $('form').submit(); //submit the form
+   }
 });
