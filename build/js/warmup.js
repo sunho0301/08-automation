@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$("circle").click(function(c){var t=1.1*$(this).attr("r");$("circle").attr("r",t)});var c=function(){$(this).fadeOut()};$(".removable").click(c),$("#add").click(function(t){var e=$('<p><button class="removable">Remove me!</button></p>');e.click(c),$("#add").before(e)})});
